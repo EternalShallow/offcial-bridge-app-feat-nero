@@ -232,29 +232,38 @@ export class ErrorHandler {
      * Show error toast
      */
     private showToast(errorInfo: ErrorInfo): void {
+        if (typeof window === 'undefined') {
+            return; // Skip toast on server side
+        }
+
         const { severity, message } = errorInfo;
 
-        switch (severity) {
-            case ErrorSeverity.CRITICAL:
-                toast.error(message, {
-                    duration: 8000,
-                    description: 'Critical error, please try again later or contact support',
-                });
-                break;
-            case ErrorSeverity.HIGH:
-                toast.error(message, {
-                    duration: 6000,
-                    description: 'Important error, please check and try again',
-                });
-                break;
-            case ErrorSeverity.MEDIUM:
-                toast.error(message, { duration: 4000 });
-                break;
-            case ErrorSeverity.LOW:
-                toast.warning(message, { duration: 3000 });
-                break;
-            default:
-                toast.error(message);
+        try {
+            switch (severity) {
+                case ErrorSeverity.CRITICAL:
+                    toast.error(message, {
+                        duration: 8000,
+                        description: 'Critical error, please try again later or contact support',
+                    });
+                    break;
+                case ErrorSeverity.HIGH:
+                    toast.error(message, {
+                        duration: 6000,
+                        description: 'Important error, please check and try again',
+                    });
+                    break;
+                case ErrorSeverity.MEDIUM:
+                    toast.error(message, { duration: 4000 });
+                    break;
+                case ErrorSeverity.LOW:
+                    toast.error(message, { duration: 3000 });
+                    break;
+                default:
+                    toast.error(message);
+            }
+        } catch (error) {
+            // Fallback to console if toast fails
+            console.error('Toast error:', error);
         }
     }
 

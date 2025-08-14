@@ -10,14 +10,15 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-    // This tells ESLint to load the config from the package `eslint-config-custom`
-    ...compat.extends('next/core-web-vitals', 'next/typescript', 'custom'),
+    // Next.js core web vitals and TypeScript rules
+    ...compat.extends('next/core-web-vitals', 'next/typescript'),
     {
         rules: {
             '@typescript-eslint/no-explicit-any': 'off',
             '@typescript-eslint/no-duplicate-enum-values': 'off',
             '@typescript-eslint/no-unused-vars': 'warn',
             '@typescript-eslint/no-non-null-assertion': 'off',
+            '@next/next/no-html-link-for-pages': 'off',
         },
     },
 ];

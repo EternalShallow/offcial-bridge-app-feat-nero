@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d7a1657d-9288-4c3b-83b5-f7e8968d6c9d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/config/metadata.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/config/theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/config/tokens.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/env.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/global.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/ids.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/network/eni-chain.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/network/mainnet-chains.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/network/nero-chain.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/network/safe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/network/testnet-chains.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/route-provider.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/consts/token/currency-symbol-map.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/providers/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/providers/injected-wrapper.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/providers/injected.provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/providers/query.provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/common/providers/web3.provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/Analytics.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/Bridge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ClientOnly.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/Web3Client.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/Web3Client.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/Web3ErrorBoundary.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/activity/ActivityActionRow.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/activity/ActivityHome.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/activity/ActivityRow.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/activity/hooks/use-status.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/animation/animate-height.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeAmount.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeFees.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeFrom.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeInfo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeSelect.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/BridgeTo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/bridge/TokenSelect.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/confirmation/ApproveButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/confirmation/hooks/use-build-pending-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/confirmation/hooks/use-initiate-bridge.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/confirmation/tab-1-review.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/confirmation/tab-2-start.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/demo/global.demo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/error/ErrorBoundary.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/error/ErrorBoundary.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/error/ErrorDisplay.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/error/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/icons/OIcon.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/icons/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/icons/route-provider-icon.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/layout/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/layout/Header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/ChainSelectModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/CommonSelectModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/ConfirmationModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/RouteSelectModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/TokenSelectModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/TransactionDetailsModal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/modals/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/route/RouteDetail.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/route/RoutePreview.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/tokens/TokenList.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/transaction/LineItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/transaction/TransactionLineItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/transaction/WaitLineItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/transaction/WrapLineItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/dialog2.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/dropdown-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/label.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/pill.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/skeleton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/sonner.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/switch.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/tabs.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/components/ui/tooltip.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/error.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/global-error.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/globals.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/account/use-is-contract-account.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/amount/use-fiat-amount.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/amount/use-gas-balance.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/amount/use-get-formatted-amount.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/amount/use-receive-amount.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/amount/use-wei-amount.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-allowance.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-approval-address.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-approve-gas-estimate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-approve-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-approve.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-approved.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/approvals/use-needs-explicit-approve.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/apps/use-is-obridge.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/balances/use-gas-balance.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/balances/use-has-insufficient-balance.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/balances/use-token-balance.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/balances/use-token-balances.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/bridge/use-bridge.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-bridge-gas-estimate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-fee.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-gas-approve.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-gas-estimate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-gas-initiating.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-network-fee.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-route-gas-estimate.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/fees/use-route-initiating-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/links/use-explorer-link.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/profiles/use-address-profile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/profiles/use-evm-profile.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/routes/use-bridge-route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/common.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/eni/use-eni-finalise.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/eni/use-eni-withdrawal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/eni/use-send-transaction-dto.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/row-general.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/use-progress-rows-submission.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/rows/use-rows.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/times/use-transfer-time.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tokens/use-native-token.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tokens/use-token.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-activity-effects.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-finalising-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-initiating-chain-id.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-initiating-hash.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-initiating-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-latest-submitted-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-local-transactions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-amount-output.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-amount.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-duration.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-from-to.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-recipient.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-sender.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-submit.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/tx/use-tx-timestamp.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-chains.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-initialise-bridge-state.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-initialise-query-params.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-initialise.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-is-withdrawal.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-modal.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-theme.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-track-event.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-transform-period-text.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/use-wagmi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/wallets/use-evm-address.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/wallets/use-evm-wallet-modal.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/wallets/use-recipient.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/hooks/wallets/use-switch-chain.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/i18n/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/i18n/settings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/not-found.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/activity.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/bridge.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/ens.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/gas.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/onchain.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/route.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/apis/token.api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/hooks/use-bridge-config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/hooks/use-bridge-reset.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/hooks/use-bridge-routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/hooks/use-prices.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/hooks/use-state-client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/hooks/use-transactions.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/bridge.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/chain.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/inject.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/onchain.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/route.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/token.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/models/transaction.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/bridge.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/global.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/local-txs.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/modal.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/route.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/setting.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/service/stores/token.store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/styles/animation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/error/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/error/error-catch.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/error/error-codes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/error/error-handler.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/error/error-handler.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/format-decimals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/format-value.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/get-metadata.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/get-period.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/guards.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/is-address-equal.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/is-obridge.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/log.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/logger.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/logger.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/manager/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/manager/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/manager/rpc-error.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/manager/rpc-health-check.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/manager/rpc-manager.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/manager/test-health-check.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/tokens/is-eth.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/tokens/is-token.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/tokens/native-token-scaling.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/app/utils/tx/wait-for-safe-tx.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/docs/error-handling.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/docs/logger-usage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/eslint.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/postcss.config.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/public/img/networks/eni.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/public/img/networks/nero.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/public/img/obt/orbiter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/public/locales/en/translation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/public/locales/zh/translation.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/bridge/types/global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config-custom/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config-custom/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tsconfig/base.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tsconfig/nextjs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tsconfig/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/tsconfig/react-library.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-workspace.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;EternalShallow&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:EternalShallow/offcial-bridge-app-feat-nero.git&quot;,
+    &quot;accountId&quot;: &quot;e055e88a-819e-40f1-9fb2-c73ed2147d6b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="31Gk0eb3p24uYOxUiOy1jXz722n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zhdf/Documents/work/offcial-bridge-app-feat-nero&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/zhdf/Documents/work/offcial-bridge-app-feat-nero/node_modules/prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/zhdf/Documents/work/offcial-bridge-app-feat-nero/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7a1657d-9288-4c3b-83b5-f7e8968d6c9d" name="Changes" comment="" />
+      <created>1755157575036</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755157575036</updated>
+      <workItem from="1755157576148" duration="2350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
