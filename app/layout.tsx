@@ -5,7 +5,7 @@ import { Metadata, Viewport } from 'next';
 import { headers } from 'next/headers';
 
 import { metadataConfig } from './common/consts/config/metadata';
-import { DEFAULT_HOST, isDev, isTestnet } from './common/consts/env';
+import { DEFAULT_HOST, isDev, isTestnet, getBridgeHost } from './common/consts/env';
 import { defaultAppConfig } from './common/consts/global';
 import { Providers } from './common/providers';
 import { InjectedWrapper } from './common/providers/injected-wrapper';
@@ -20,20 +20,39 @@ import { LogCategory, logger } from './utils/logger';
 
 const getInjectState = cache(async () => {
     const h = await headers();
-    const host = isDev || isTestnet ? DEFAULT_HOST || '' : h.get('host') || '';
-    logger.info(LogCategory.BRIDGE, 'Getting bridge config', { host, DEFAULT_HOST });
-
-    const config = await getBridgeConfig({
-        host,
-    }).catch((error) => {
-        logger.error(LogCategory.API, 'Bridge config error', error, { host });
-        return null;
+    
+    // Use the new getBridgeHost function to determine the correct host
+    const host = getBridgeHost();
+    
+    logger.info(LogCategory.BRIDGE, 'Getting bridge config', { 
+        host, 
+        bridgeEnv: process.env.NEXT_PUBLIC_BRIDGE_ENV,
+        isTestnet,
+        isMainnet: process.env.NEXT_PUBLIC_BRIDGE_ENV === 'mainnet'
     });
 
-    if (!config?.data) {
-        throw new Error('Server: Global Config Error');
+    try {
+        // Try to get config from API first
+        const config = await getBridgeConfig({ host });
+        
+        if (config?.data) {
+            logger.info(LogCategory.BRIDGE, 'Using API config', { host });
+            return { host, ...config.data };
+        }
+    } catch (error) {
+        logger.warn(LogCategory.BRIDGE, 'API config failed, using local config', { 
+            host, 
+            error: error instanceof Error ? error.message : String(error) 
+        });
     }
-    return { host, ...config.data };
+    
+    // Fallback to local config if API fails
+    logger.info(LogCategory.BRIDGE, 'Using local default config', { 
+        host, 
+        configType: isTestnet ? 'testnet' : 'mainnet' 
+    });
+    
+    return { host, ...defaultAppConfig };
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -48,6 +67,9 @@ export async function generateMetadata(): Promise<Metadata> {
             'Server: Metadata generation error',
             error instanceof Error ? error : new Error(String(error))
         );
+        
+        // Fallback to default metadata
+        logger.info(LogCategory.GENERAL, 'Using fallback metadata config');
         return getMetadata(metadataConfig);
     }
 }

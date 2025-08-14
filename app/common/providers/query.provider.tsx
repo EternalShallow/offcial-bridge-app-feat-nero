@@ -3,6 +3,7 @@ import React, { ReactNode } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import Axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 
+import { PROJECT_ID } from '@/common/consts/env';
 import { mapBusinessErrorCode } from '@/utils/error/error-codes';
 import { handleError } from '@/utils/error/error-handler';
 
@@ -56,6 +57,13 @@ const createAxiosInstance = (config?: AxiosRequestConfig, retryConfig?: Partial<
             // Add retry configuration to request
             (config as any).retryConfig = finalRetryConfig;
             (config as any).retryCount = 0;
+            
+            // Add projectId header if available
+            if (PROJECT_ID) {
+                config.headers = config.headers || {};
+                config.headers['projectId'] = PROJECT_ID;
+            }
+            
             return config;
         },
         (error) => Promise.reject(error)

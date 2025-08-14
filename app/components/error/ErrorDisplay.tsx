@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Link from 'next/link';
 
@@ -24,12 +24,18 @@ export default function ErrorDisplay({
     onReset,
     showHomeButton = true,
 }: ErrorDisplayProps) {
-    // Simple development detection
-    const isDev =
-        typeof window !== 'undefined' &&
-        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+    // Use state to avoid hydration mismatch
+    const [isClient, setIsClient] = useState(false);
+    const [isDev, setIsDev] = useState(false);
 
-    const shouldShowDetails = showDetails || isDev;
+    useEffect(() => {
+        setIsClient(true);
+        // Check if we're in development environment
+        const dev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        setIsDev(dev);
+    }, []);
+
+    const shouldShowDetails = showDetails || (isClient && isDev);
 
     const containerClasses = 'bg-background text-t1';
     const cardClasses = 'bg-bg1 border-red-500/20';
