@@ -1,0 +1,153 @@
+@keyframes spinner {
+    0% {
+        stroke-dashoffset: 306;
+    }
+    50% {
+        stroke-dasharray: 40, 134;
+    }
+    100% {
+        stroke-dasharray: 1, 174;
+        stroke-dashoffset: 132;
+    }
+}
+.animate-spinner {
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes move-grid {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 32px;
+    }
+}
+.animate-sb-grid {
+    animation: move-grid 2s linear infinite;
+}
+
+@keyframes bg-corn {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 4px;
+    }
+}
+.animate-bg-corn {
+    animation: bg-corn 0.2s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(5%);
+    }
+    50% {
+        transform: translateY(-5%);
+    }
+    100% {
+        transform: translateY(5%);
+    }
+}
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0%,
+    100% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+}
+.animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle-waggle {
+    10%,
+    30% {
+        transform: rotate(-2deg);
+    }
+    20%,
+    40% {
+        transform: rotate(2deg);
+    }
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.animate-wiggle-waggle {
+    animation: wiggle-waggle 2s ease-in-out infinite;
+}
+
+@keyframes confirmation-wiggle {
+    10%,
+    30% {
+        transform: rotate(12deg);
+    }
+    20%,
+    40% {
+        transform: rotate(17deg);
+    }
+    0%,
+    50%,
+    100% {
+        transform: rotate(15deg);
+    }
+}
+.animate-confirmation-wiggle {
+    animation: confirmation-wiggle 2s ease-in-out infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.animate-marquee {
+    animation: marquee 72s linear infinite;
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.animate-marquee2 {
+    animation: marquee2 72s linear infinite;
+}
+
+@keyframes accordion-down {
+    from {
+        height: 0;
+    }
+    to {
+        height: var(--radix-accordion-content-height);
+    }
+}
+.animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+}
+
+@keyframes accordion-up {
+    from {
+        height: var(--radix-accordion-content-height);
+    }
+    to {
+        height: 0;
+    }
+}
+.animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+}

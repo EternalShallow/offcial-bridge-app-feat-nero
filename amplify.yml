@@ -1,0 +1,20 @@
+version: 1
+applications:
+  - frontend:
+      buildPath: '/'
+      phases:
+        preBuild:
+          commands:
+            - npm install -g pnpm@8.15.4
+            - pnpm install
+        build:
+          commands:
+            - pnpm build --filter=bridge
+      artifacts:
+        baseDirectory: apps/bridge/.next
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+    appRoot: apps/bridge

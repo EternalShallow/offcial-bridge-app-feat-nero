@@ -1,0 +1,80 @@
+import { Hex } from 'viem';
+
+import { safeTransactionServiceEndpoints } from '@/common/consts/network/safe';
+
+interface SafeMultisigTransactionsResult {
+    safe: string;
+    to: string;
+    value: string;
+    data: string;
+    operation: number;
+    gasToken: string;
+    safeTxGas: string;
+    baseGas: string;
+    gasPrice: string;
+    refundReceiver: string;
+    nonce: string;
+    executionDate: string | null;
+    submissionDate: string;
+    modified: string;
+    blockNumber: null | number;
+    transactionHash: null | Hex;
+    safeTxHash: string;
+    proposer: string;
+    proposedByDelegate: null;
+    executor: string | null;
+    isExecuted: boolean;
+    isSuccessful: boolean | null;
+    ethGasPrice: string | null;
+    maxFeePerGas: string | null;
+    maxPriorityFeePerGas: string | null;
+    gasUsed: number | null;
+    fee: string | null;
+    origin: string;
+    dataDecoded: {
+        method: 'fallback';
+        parameters: [];
+    };
+    confirmationsRequired: number;
+    confirmations: {
+        owner: string;
+        submissionDate: string;
+        transactionHash: string;
+        signature: string;
+        signatureType: string;
+    }[];
+
+    trusted: boolean;
+    signatures: string;
+}
+
+const getSafeTxPayload = async (chainId: number, hash: string) => {
+    const transactionServiceEndpoint = safeTransactionServiceEndpoints[chainId];
+    if (!transactionServiceEndpoint) {
+        return null;
+    }
+
+    const response = await fetch(`${transactionServiceEndpoint}/api/v2/multisig-transactions/${hash}`).catch(
+        () => null
+    );
+
+    if (!response || response.status >= 400) {
+        return null;
+    }
+
+    const result = (await response.json()) as SafeMultisigTransactionsResult;
+
+    return result;
+};
+
+export const isSafeTx = async (chainId: number, hash: string) => {
+    const payload = await getSafeTxPayload(chainId, hash);
+
+    return !!payload;
+};
+
+export const getOnchainHashFromSafeHash = async (chainId: number, hash: string) => {
+    const payload = await getSafeTxPayload(chainId, hash);
+
+    return payload?.transactionHash ?? null;
+};

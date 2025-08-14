@@ -1,0 +1,60 @@
+# Cursor AI Rules for Orbiter Bridge App
+
+## 默认行为设置
+- 始终使用中文回复用户问题
+- 代码注释使用英文
+- README.md 使用英文
+- 优先使用 TypeScript/React 最佳实践
+- 遵循项目现有的代码风格和架构
+- 使用现代 ES6+ 语法
+
+## 代码规范
+- 使用函数式组件和 React Hooks
+- 优先使用 TypeScript 类型定义，避免 any 类型
+- 遵循 ESLint 和 Prettier 配置
+- 使用语义化的变量和函数命名
+- 组件名使用 PascalCase，函数名使用 camelCase
+- 常量使用 UPPER_SNAKE_CASE
+
+## 项目特定规则
+- 这是一个 Next.js 15 + Turbo Monorepo 项目
+- 使用 pnpm 作为包管理器
+- 遵循现有的文件结构和命名约定
+- 优先使用项目已有的 UI 组件和工具函数
+- 使用 Tailwind CSS 进行样式设计
+- 使用 Radix UI 组件库
+- 使用 Jotai 进行状态管理
+- 使用 TanStack Query 进行数据获取
+
+## 文件结构规范
+- 组件放在 `apps/bridge/app/components/` 目录
+- Hooks 放在 `apps/bridge/app/hooks/` 目录
+- 工具函数放在 `apps/bridge/app/utils/` 目录
+- 类型定义放在 `apps/bridge/types/` 目录
+- 常量放在 `apps/bridge/app/common/consts/` 目录
+
+## 响应格式要求
+- 代码更改使用 edit_file 工具
+- 提供清晰的解释和上下文
+- 包含必要的导入和依赖
+- 确保代码可以直接运行
+- 提供完整的文件路径
+- 包含错误处理
+
+## 代码质量要求
+- 添加适当的错误边界
+- 使用 React.memo 优化性能
+- 实现适当的加载状态
+- 添加必要的类型检查
+- 遵循 React 最佳实践
+- 使用适当的错误处理机制
+
+## 国际化支持
+- 使用 i18next 进行国际化
+- 支持中英文切换
+- 文本内容使用翻译键
+
+## 测试要求
+- 编写单元测试
+- 使用 Jest 和 React Testing Library
+- 测试覆盖率要求 > 80% 

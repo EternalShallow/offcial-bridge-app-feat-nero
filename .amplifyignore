@@ -1,0 +1,29 @@
+# Ignore other app directories
+apps/*
+!apps/bridge
+
+# Ignore package management files
+packages/
+
+# Ignore development files
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore build cache
+.next/cache/
+node_modules/
+
+# Ignore version control
+.git/
+.gitignore
+
+# Ignore documentation
+README.md
+*.md
+
+# Ignore test files
+**/*.test.*
+**/*.spec.* 
